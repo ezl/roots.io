@@ -1,5 +1,10 @@
 // Content wrapper
-.wrap { }
+.wrap {
+  overflow-x: hidden;
+  @media (min-width: 768px) {
+    padding-left: 18%;
+  }
+}
 
 // Main content area
 .main {
@@ -7,4 +12,13 @@
   .sidebar-primary & {
     .make-sm-column(@main-sm-columns - @sidebar-sm-columns);
   }
+}
+
+
+// nav link colors
+a {
+  padding: .5rem;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
 }
