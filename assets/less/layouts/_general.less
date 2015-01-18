@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 // Content wrapper
 .wrap {
   overflow-x: hidden;
@@ -15,10 +19,63 @@
 }
 
 
-// nav link colors
-a {
-  padding: .5rem;
-  color: #fff;
-  font-weight: 300;
-  font-size: 1rem;
+// nav
+.nav-main {
+  .nav {
+    padding-bottom: 1rem;
+    & > li > a {
+      padding: .5rem;
+      color: #fff;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+    height: auto;
+    background: 0;
+    .nav {
+      text-align: left;
+    }
+    .nav > li {
+        border-top: 1px solid #295;
+    }
+    .nav > li:last-child {
+        border-bottom: 1px solid #295;
+    }
+    .nav > li > a {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
+}
+
+.nav-main .nav>li>a:hover,
+.nav-main .nav>li>a:focus {
+    background: 0;
+}
+@media (min-width: 768px) {
+.nav-main .nav>li>a:hover {
+    color: #19703e;
+}
+}
+@media (min-width: 768px) {
+  .nav-main .nav>li.active>a {
+    background: #19703e;
+    color: #fff;
+  }
+}
+
+
+
+// brand
+
+.brand {
+    display: inline-block;
+    margin-bottom: .5rem;
+    padding: .5rem 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
 }

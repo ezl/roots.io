@@ -1,26 +1,19 @@
 <header class="banner" role="banner">
   <div itemscope="" itemtype="http://schema.org/Organization">
     <a class="brand" itemprop="url" href="/">
-      <img itemprop="logo" src="http://roots.io/assets/img/roots.svg">
-      <i class="icon-roots"></i>
+      <i class="fa fa-user"></i>
       <b>Roots</b>
     </a>
   </div><!-- roots logo -->
 
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+  <div style="display:none;">
+    <a style="color:white;" class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
   </div>
 
-  <nav class="collapse navbar-collapse" role="navigation">
+  <nav class="nav-main" role="navigation">
     <?php
       if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Nav_Walker(), 'menu_class' => 'nav navbar-nav'));
+        wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Nav_Walker(), 'menu_class' => 'nav'));
       endif;
     ?>
     <ul class="social">
