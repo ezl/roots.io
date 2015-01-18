@@ -1,73 +1,66 @@
 html {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 // Content wrapper
 .wrap {
-  overflow-x: hidden;
-  @media (min-width: 768px) {
-    padding-left: 18%;
-  }
+    overflow-x: hidden;
+    @media (min-width: 768px) {
+        padding-left: 18%;
+    }
 }
 
 // Main content area
 .main {
-  .make-sm-column(@main-sm-columns);
-  .sidebar-primary & {
-    .make-sm-column(@main-sm-columns - @sidebar-sm-columns);
-  }
+    .make-sm-column(@main-sm-columns);
+    .sidebar-primary & {
+        .make-sm-column(@main-sm-columns - @sidebar-sm-columns);
+    }
 }
 
 
 // nav
 .nav-main {
-  .nav {
-    padding-bottom: 1rem;
-    & > li > a {
-      padding: .5rem;
-      color: #fff;
-      font-weight: 300;
-      font-size: 1rem;
-    }
-  }
-
-  @media (min-width: 768px) {
-    display: block;
-    height: auto;
-    background: 0;
     .nav {
-      text-align: left;
+        padding-bottom: 1rem;
+        & > li > a {
+            padding: .5rem;
+            color: #fff;
+            font-weight: 300;
+            font-size: 1rem;
+            &:hover,
+            &:focus {
+                background: 0;
+            }
+        }
     }
-    .nav > li {
-        border-top: 1px solid #295;
-    }
-    .nav > li:last-child {
-        border-bottom: 1px solid #295;
-    }
-    .nav > li > a {
-      padding-right: 1rem;
-      padding-left: 1rem;
-    }
-  }
-}
+    @media (min-width: 768px) {
+        display: block;
+        height: auto;
+        background: 0;
 
-.nav-main .nav>li>a:hover,
-.nav-main .nav>li>a:focus {
-    background: 0;
+        .nav {
+            text-align: left;
+            & > li {
+                border-top: 1px solid #295;
+                &:last-child {
+                    border-bottom: 1px solid #295;
+                }
+                &.active > a {
+                    background: #19703e;
+                    color: #fff;
+                }
+                & > a {
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    &:hover {
+                        color: #19703e;
+                    }
+                }
+            }
+        }
+    }
 }
-@media (min-width: 768px) {
-.nav-main .nav>li>a:hover {
-    color: #19703e;
-}
-}
-@media (min-width: 768px) {
-  .nav-main .nav>li.active>a {
-    background: #19703e;
-    color: #fff;
-  }
-}
-
-
 
 // brand
 
