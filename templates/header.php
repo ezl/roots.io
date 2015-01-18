@@ -1,8 +1,8 @@
 <header class="banner" role="banner">
   <div itemscope="" itemtype="http://schema.org/Organization">
     <a class="brand" itemprop="url" href="/">
-      <i class="fa fa-user"></i>
-      <b>Roots</b>
+      <i class="fa fa-github"></i>
+      Title
     </a>
   </div><!-- roots logo -->
 
@@ -17,9 +17,9 @@
       endif;
     ?>
     <ul class="social">
-      <li><a href="https://github.com/roots"><i class="icon-github"></i> x</a></li>
-      <li><a href="http://discourse.roots.io/"><i class="icon-bubble"></i> y</a></li>
-      <li><a href="https://twitter.com/retlehs"><i class="icon-twitter"></i> z</a></li>
+      <li><a href=""><i class="fa fa-github"></i></a></li>
+      <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a href=""><i class="fa fa-twitter"></i></a></li>
     </ul>
   </nav>
 </header>
