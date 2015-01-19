@@ -1,13 +1,12 @@
 <header class="banner" role="banner">
   <div itemscope="" itemtype="http://schema.org/Organization">
-    <a class="brand" itemprop="url" href="/">
+    <a class="brand" itemprop="url" href="<?php echo home_url(); ?>">
       <i class="fa fa-github"></i>
-      Title
+      <?php bloginfo('name'); ?>
     </a>
-  </div><!-- roots logo -->
-
-  <div style="display:none;">
-    <a style="color:white;" class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+  </div><!-- brand/logo -->
+  <div class="blog-description">
+    <?php echo get_bloginfo('description'); ?>
   </div>
 
   <nav class="nav-main" role="navigation">
