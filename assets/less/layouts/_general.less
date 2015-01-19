@@ -16,7 +16,7 @@ body {
 .wrap {
     overflow-x: hidden;
     @media (min-width: 768px) {
-        padding-left: 18%;
+        padding-left: @sidebar-width;
     }
 }
 
@@ -35,7 +35,7 @@ body {
         padding-bottom: 1rem;
         & > li > a {
             padding: .5rem;
-            color: #fff;
+            color: @nav-link-color;
             font-weight: 300;
             font-size: 1rem;
             &:hover,
@@ -52,20 +52,20 @@ body {
         .nav {
             text-align: left;
             & > li {
-                border-top: 1px solid #295;
+                border-top: 1px solid @nav-link-divider-color;
                 &:last-child {
-                    border-bottom: 1px solid #295;
+                    border-bottom: 1px solid @nav-link-divider-color;
                 }
                 & > a {
                     padding-right: 1rem;
                     padding-left: 1rem;
                     &:hover {
-                        color: #19703e;
+                        color: @brand-mute;
                     }
                 }
                 &.active > a {
-                    background: #19703e;
-                    color: #fff;
+                    background: @brand-mute;
+                    color: @nav-link-color;
                 }
             }
         }
@@ -78,7 +78,7 @@ body {
     display: inline-block;
     margin-bottom: .5rem;
     padding: .5rem 0;
-    color: #fff;
+    color: @brand-color;
     font-weight: 300;
     font-size: 1.5rem;
 
@@ -112,9 +112,9 @@ body {
 
 @media (min-width: 768px) {
   .banner .social a {
-    color: #19703e;
+    color: @brand-mute;
     &:hover {
-      color: #fff;
+      color: @nav-link-color;
     }
   }
 }

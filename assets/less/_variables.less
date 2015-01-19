@@ -4,14 +4,20 @@
 @main-sm-columns:       @grid-columns;
 @sidebar-sm-columns:    4;
 
-
-// Brand colors
-// -------------------------
-
-@brand-primary:         #27ae60;
-
-
 // Glyphicons path
 // -------------------------
 
 @icon-font-path:        "../vendor/bootstrap/fonts/";
+
+// Theme Settings
+// -------------------------
+
+@brand-primary:         #27ae60; // Bootstrap uses this too
+@sidebar-width:        18%;
+@nav-link-divider-color: darken(@brand-primary, 8%);
+@nav-link-color: #fff;
+@brand-color: #fff;
+
+//
+
+@brand-mute: darken(@brand-primary, 10%);
