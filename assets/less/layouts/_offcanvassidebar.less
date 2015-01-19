@@ -6,6 +6,7 @@
 
 /* Toggle Styles */
 
+@media (max-width: 767px) {
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -19,9 +20,9 @@
 }
 
 #sidebar-wrapper {
+    position: fixed;
     z-index: -1;
     top: 0px;
-    position: fixed;
     left: 0px;
     width: @sidebar-width;
     height: 100%;
@@ -46,4 +47,5 @@
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -@sidebar-width;
+}
 }

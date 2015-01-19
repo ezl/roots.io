@@ -8,7 +8,6 @@
       <?php echo get_bloginfo('description'); ?>
     </div>
   </div><!-- brand/logo -->
-</header>
 
   <div id="sidebar-wrapper">
     <nav class="nav-main" role="navigation">
@@ -24,3 +23,4 @@
       </ul>
     </nav>
   </div><!-- #sidebar-wrapper -->
+</header>
