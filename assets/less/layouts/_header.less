@@ -42,24 +42,25 @@
 }
 
 
-.banner .social {
+.social {
+    text-align: center;
     margin: 0 0 1rem;
     padding: 0;
     list-style: none;
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: .5rem .2rem;
+        font-size: 1.3rem;
+    }
 }
 
-.banner .social li {
-    display: inline-block;
-}
-
-.banner .social a {
-    display: block;
-    padding: .5rem .2rem;
-    font-size: 1.3rem;
-}
 
 @media (min-width: 768px) {
-  .banner .social a {
+  .social a {
     color: @brand-mute;
     &:hover {
       color: @nav-link-color;

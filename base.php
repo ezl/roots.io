@@ -1,5 +1,5 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="wrapper">
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
@@ -13,6 +13,7 @@
   ?>
 
   <div class="wrap" role="document">
+  <div  id="page-content-wrapper">
     <main class="main" role="main">
       <div class="content">
         <?php include roots_template_path(); ?>
@@ -23,6 +24,7 @@
         <?php include roots_sidebar_path(); ?>
       </aside><!-- /.sidebar -->
     <?php endif; ?>
+  </div><!-- /.page content wrapper -->
   </div><!-- /.wrap -->
 
   <?php get_template_part('templates/footer'); ?>
