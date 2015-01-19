@@ -1,6 +1,6 @@
 .banner { 
-  padding-right: 1rem;
-  padding-left: 1rem;
+  // padding-right: 1rem;
+  // padding-left: 1rem;
   background: @brand-primary;
   text-align: center;
 
@@ -13,3 +13,57 @@
     height: 100%;
   }
 }
+
+// brand
+
+#masthead {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#masthead a#blog-name {
+    display: inline-block;
+    margin-bottom: .5rem;
+    padding: .5rem 0;
+    color: @brand-color;
+    font-weight: 300;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+        margin-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+// banner
+
+#masthead #blog-description {
+    padding: 1rem;
+}
+
+
+.banner .social {
+    margin: 0 0 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.banner .social li {
+    display: inline-block;
+}
+
+.banner .social a {
+    display: block;
+    padding: .5rem .2rem;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .banner .social a {
+    color: @brand-mute;
+    &:hover {
+      color: @nav-link-color;
+    }
+  }
+}
+

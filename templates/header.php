@@ -1,13 +1,13 @@
 <header class="banner" role="banner">
-  <div itemscope="" itemtype="http://schema.org/Organization">
-    <a class="brand" itemprop="url" href="<?php echo home_url(); ?>">
+  <div id="masthead">
+    <a id="blog-name" itemprop="url" href="<?php echo home_url(); ?>">
       <i class="fa fa-github"></i>
       <?php bloginfo('name'); ?>
     </a>
+    <div id="blog-description">
+      <?php echo get_bloginfo('description'); ?>
+    </div>
   </div><!-- brand/logo -->
-  <div id="blog-description">
-    <?php echo get_bloginfo('description'); ?>
-  </div>
 
   <nav class="nav-main" role="navigation">
     <?php
