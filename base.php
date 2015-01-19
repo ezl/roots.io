@@ -7,13 +7,13 @@
     </div>
   <![endif]-->
 
+  <div  id="page-content-wrapper">
   <?php
     do_action('get_header');
     get_template_part('templates/header');
   ?>
 
   <div class="wrap" role="document">
-  <div  id="page-content-wrapper">
     <main class="main" role="main">
       <div class="content">
         <?php include roots_template_path(); ?>
