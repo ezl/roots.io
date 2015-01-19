@@ -5,7 +5,7 @@
       <?php bloginfo('name'); ?>
     </a>
   </div><!-- brand/logo -->
-  <div class="blog-description">
+  <div id="blog-description">
     <?php echo get_bloginfo('description'); ?>
   </div>
 
