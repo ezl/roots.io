@@ -16,6 +16,11 @@
   <div class="wrap" role="document">
     <main class="main" role="main">
       <div class="content">
+        <div id="blog-description">
+          <p class="quiet">
+            <?php echo get_bloginfo('description'); ?>
+          </p>
+        </div>
         <?php include roots_template_path(); ?>
       </div>
     </main><!-- /.main -->

@@ -12,14 +12,32 @@
 // Theme Settings
 // -------------------------
 
-@brand-primary:         #27ae60; // Bootstrap uses this too
+
+// Original roots colors
+// @brand-primary:         #27ae60; // Bootstrap uses this too
+// @sidebar-width:        250px;
+// @nav-link-divider-color: darken(@brand-primary, 8%);
+// @nav-link-color: #fff;
+// @brand-color: #fff;
+// @main-content-area-bg-color: #fff;
+// @offcanvas-menu-bg-color: #333;
+
+
+// My custom colors to replicate the old blog.ezliu.com less theme
 @sidebar-width:        250px;
-@nav-link-divider-color: darken(@brand-primary, 8%);
-@nav-link-color: #fff;
-@brand-color: #fff;
+@brand-primary:         #fff; // Bootstrap uses this too
+@nav-link-divider-color: @brand-primary;
+@nav-link-color: #333;
+@brand-color: #333;
 @main-content-area-bg-color: #fff;
-@offcanvas-menu-bg-color: #333;
+@offcanvas-menu-bg-color: #eee;
+@accent-color: #ff0000;
+@link-color: #555;
+@link-hover-color: @brand-mute;
+@font-size-base: 20px;
+@font-family-base: FuturaLight;
+
 
 //
 
-@brand-mute: darken(@brand-primary, 10%);
+@brand-mute: darken(@brand-primary, 20%);

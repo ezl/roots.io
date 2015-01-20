@@ -28,6 +28,10 @@
     color: @brand-color;
     font-weight: 300;
     font-size: 1.5rem;
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 
     @media (min-width: 768px) {
         margin-top: 1rem;
@@ -44,6 +48,9 @@
 
 
 .social {
+    position: fixed;
+    width: 250px;
+    bottom: 0;
     text-align: center;
     margin: 0 0 1rem;
     padding: 0;
@@ -57,15 +64,8 @@
         padding: .5rem .2rem;
         font-size: 1.3rem;
     }
-}
-
-
-@media (min-width: 768px) {
-  .social a {
-    color: @brand-mute;
-    &:hover {
-      color: @nav-link-color;
+    a:hover {
+      color: @accent-color;
     }
-  }
 }
 

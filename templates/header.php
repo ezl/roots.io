@@ -4,12 +4,9 @@
 </>
   <div id="masthead">
     <a id="blog-name" itemprop="url" href="<?php echo home_url(); ?>">
-      <i class="fa fa-github"></i>
-      <?php bloginfo('name'); ?>
+      <p><img src="http://blog.ezliu.com/wp-content/uploads/2014/01/lau2.png"></p>
+      <p><?php bloginfo('name'); ?></p>
     </a>
-    <div id="blog-description">
-      <?php echo get_bloginfo('description'); ?>
-    </div>
   </div><!-- brand/logo -->
 
 
@@ -22,9 +19,9 @@
         endif;
       ?>
       <ul class="social">
-        <li><a href=""><i class="fa fa-github"></i></a></li>
-        <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
-        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        <li><a target="_blank" href="https://github.com/ezl"><i class="fa fa-github"></i></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/ericzliu"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a target="_blank" href="https://twitter.com/ezliu"><i class="fa fa-twitter"></i></a></li>
       </ul>
     </nav>
   </div><!-- #sidebar-wrapper -->

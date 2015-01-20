@@ -8,7 +8,6 @@
 
 .toggle-menu {
     border: 0px;
-    color: white;
     background: transparent;
     position: absolute;
     top: 0px;
@@ -29,6 +28,7 @@
 
 #wrapper.toggled {
     padding-left: @sidebar-width;
+
 }
 
 #sidebar-wrapper {
@@ -56,5 +56,6 @@
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -@sidebar-width;
+    border-left: 1px solid @brand-mute;
 }
 }

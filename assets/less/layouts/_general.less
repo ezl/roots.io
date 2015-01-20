@@ -5,11 +5,7 @@
   font-style: normal;
 }
 html {
-    font-size: 20px;
-}
-body {
-    font-family: FuturaLight;
-    font-size: 24px;
+    font-size: @font-size-base;
 }
 
 // Content wrapper
@@ -33,6 +29,10 @@ body {
 .nav-main {
     .nav {
         padding-bottom: 1rem;
+        & li.active > a {
+            font-weight: bold;
+            color: @accent-color;
+        }
         & > li > a {
             padding: .5rem;
             color: @nav-link-color;
@@ -63,18 +63,15 @@ body {
                         color: @brand-mute;
                     }
                 }
-                &.active > a {
-                    background: @brand-mute;
-                    color: @nav-link-color;
-                }
             }
         }
     }
 }
 
 .content {
-    padding: 1.5rem 1rem;
+    padding: 0 1rem;
     @media (min-width: 768px) {
+        padding: 1.5rem 3rem;
         padding-left: 3rem;
         padding-right: 3rem;
     }
@@ -84,7 +81,7 @@ body {
 }
 
 
-time.updated {
+time.updated, .quiet {
     color: #aaa;
     font-size: 0.7em;
 }
@@ -112,4 +109,8 @@ table#archives {
         padding-bottom: 10px;
         vertical-align: top;
     }
+}
+
+.page-header {
+    margin-top: 0;
 }
