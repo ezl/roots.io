@@ -1,4 +1,7 @@
 <header class="banner" role="banner">
+<button type="button" class="toggle-menu" onclick="$('#wrapper').toggleClass('toggled')">
+  <i class="fa fa-bars"></i>
+</button>
   <div id="masthead">
     <a id="blog-name" itemprop="url" href="<?php echo home_url(); ?>">
       <i class="fa fa-github"></i>
@@ -8,6 +11,8 @@
       <?php echo get_bloginfo('description'); ?>
     </div>
   </div><!-- brand/logo -->
+
+
 
   <div id="sidebar-wrapper">
     <nav class="nav-main" role="navigation">
