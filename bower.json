@@ -1,9 +1,9 @@
 {
-  "name": "roots",
-  "version": "7.0.3",
-  "homepage": "http://roots.io",
+  "name": "blog.ezliu.com",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ezl/roots.io",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Eric Liu <ericzliu@gmail.com>"
   ],
   "license": "MIT",
   "private": true,

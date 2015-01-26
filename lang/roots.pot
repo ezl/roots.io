@@ -185,11 +185,11 @@ msgid "Search"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Roots Starter Theme"
+msgid "blog.ezliu.com Theme"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://roots.io/starter-theme/"
+msgid "https://github.com/ezl/roots.io"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -200,7 +200,7 @@ msgid ""
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Roots"
+msgid "ezl"
 msgstr ""
 
 #. Author URI of the plugin/theme
