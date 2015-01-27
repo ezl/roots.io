@@ -7,7 +7,7 @@ Template Name: Archives
 <style>
     table { margin-top: 25px;}
     td { padding-right: 20px; padding-bottom: 10px; vertical-align: top;}
-    td:first-child { min-width: 80px;}
+    td:first-child { min-width: 100px;}
 </style>
 
 <div id="container">
