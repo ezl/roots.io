@@ -4,6 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Cedarville+Cursive);
+
 html {
     font-size: @font-size-base;
 }
@@ -75,9 +79,9 @@ html {
         padding-left: 3rem;
         padding-right: 3rem;
     }
-    p {
-        max-width: 650px;
-    }
+}
+.entry-content {
+    max-width: 650px;
 }
 
 
@@ -119,4 +123,26 @@ table#archives {
 h2.entry-title > a {
     text-decoration: none;
     text-transform: uppercase;
+}
+
+blockquote {
+  font-style: italic;
+  font-family: 'Bitter', serif;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  color: #999;
+}
+blockquote p:first-child:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
