@@ -80,8 +80,8 @@ html {
         padding-right: 3rem;
     }
 }
-.entry-content {
-    max-width: 650px;
+.content {
+    max-width: 850px;
 }
 
 
@@ -123,6 +123,20 @@ table#archives {
 h2.entry-title > a {
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.content a {
+    border-bottom: 1px solid #aaa;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.content a:hover {
+    text-decoration: none;
+    color: #999;
+    border-bottom: 1px solid #f00;
+
 }
 
 blockquote {
